@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis Results</title>
+</head>
+<body>
+    <h1>Analysis Results for {{ symbol }}</h1>
+    {% if signals %}
+        <div>{{ signals|safe }}</div>
+    {% elif message %}
+        <p>{{ message }}</p>
+    {% endif %}
+    <a href="/">Back</a>
+</body>
+</html>
